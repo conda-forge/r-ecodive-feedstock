@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "2.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ecodive_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ecodive/ecodive_{{ version }}.tar.gz
-  sha256: d5ab2cfbe40968a37455401e28bf96fce2cef45bc79ddcbc8a6a75fc31aa76d5
+  sha256: 04edd5b9a84bb3a5bc1844f751487400ef10c474db7e64282bea8c1c6a972e24
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,10 +46,7 @@ test:
 about:
   home: https://cmmr.github.io/ecodive
   dev_url: https://github.com/cmmr/ecodive
-  summary: Computes alpha and beta diversity metrics using concurrent 'C' threads. Metrics include
-    'UniFrac', Faith's phylogenetic diversity, Bray-Curtis dissimilarity, Shannon diversity
-    index, and many others. Also parses newick trees into 'phylo' objects and rarefies
-    feature tables.
+  summary: Computes alpha and beta diversity metrics using concurrent 'C' threads. Metrics include 'UniFrac', Faith's phylogenetic diversity, Bray-Curtis dissimilarity, Shannon diversity index, and many others. Also parses newick trees into 'phylo' objects and rarefies feature tables.
   license: MIT
   license_family: MIT
   license_file:
