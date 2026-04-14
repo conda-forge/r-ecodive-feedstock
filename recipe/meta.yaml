@@ -1,4 +1,4 @@
-{% set version = "2.2.2" %}
+{% set version = "2.2.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ecodive_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ecodive/ecodive_{{ version }}.tar.gz
-  sha256: 11e4e29a8adcaab51cd63d7d83c4b16f18e14e206c51fc733fcdcacf9b8fecd5
+  sha256: 6679b523c3b63cce48de0d918eb1f0ba663b27df1578bee730462691615771da
 
 build:
   number: 0
