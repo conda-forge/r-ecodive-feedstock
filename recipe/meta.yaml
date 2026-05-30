@@ -64,5 +64,3 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - dansmith01
-  identifiers:
-    - doi:10.21105/joss.09777
