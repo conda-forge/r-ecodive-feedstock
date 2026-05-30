@@ -11,9 +11,17 @@ Home: https://cmmr.github.io/ecodive
 
 Package license: MIT
 
-Summary: Computes alpha and beta diversity metrics using concurrent 'C' threads. Metrics include 'UniFrac', Faith's phylogenetic diversity, Bray-Curtis dissimilarity, Shannon diversity index, and many others. Also parses newick trees into 'phylo' objects and rarefies feature tables.
+Summary: Parallel and Memory-Efficient Ecological Diversity Metrics
 
 Development: https://github.com/cmmr/ecodive
+
+Computes alpha and beta diversity metrics using concurrent 'C' threads.
+Metrics include 'UniFrac', Faith's phylogenetic diversity, Bray-Curtis
+dissimilarity, Shannon diversity index, and many others.
+
+If you use this package in your research, please cite the official JOSS paper:
+Smith et al., (2026) <doi:10.21105/joss.09777>.
+
 
 About r-ecodive
 ---------------
@@ -22,15 +30,30 @@ Home: https://cmmr.github.io/ecodive
 
 Package license: MIT
 
-Summary: Computes alpha and beta diversity metrics using concurrent 'C' threads. Metrics include 'UniFrac', Faith's phylogenetic diversity, Bray-Curtis dissimilarity, Shannon diversity index, and many others. Also parses newick trees into 'phylo' objects and rarefies feature tables.
+Summary: Parallel and Memory-Efficient Ecological Diversity Metrics
 
 Development: https://github.com/cmmr/ecodive
+
+Computes alpha and beta diversity metrics using concurrent 'C' threads.
+Metrics include 'UniFrac', Faith's phylogenetic diversity, Bray-Curtis
+dissimilarity, Shannon diversity index, and many others.
+
+If you use this package in your research, please cite the official JOSS paper:
+Smith et al., (2026) <doi:10.21105/joss.09777>.
+
 
 Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/conda-forge/r-ecodive-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/r-ecodive-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
@@ -44,48 +67,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26420&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ecodive-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_r_base4.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26420&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ecodive-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26420&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ecodive-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_r_base4.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26420&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ecodive-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_r_base4.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26420&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ecodive-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_r_base4.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26420&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ecodive-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_r_base4.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>osx_64_r_base4.4</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26420&branchName=main">
@@ -97,20 +78,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26420&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ecodive-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.5" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_r_base4.4</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26420&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ecodive-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_r_base4.4" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_r_base4.5</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26420&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-ecodive-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_r_base4.5" alt="variant">
                 </a>
               </td>
             </tr><tr>
