@@ -1,4 +1,4 @@
-{% set version = "2.2.6" %}
+{% set version = "2.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ecodive_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ecodive/ecodive_{{ version }}.tar.gz
-  sha256: 6679b523c3b63cce48de0d918eb1f0ba663b27df1578bee730462691615771da
+  sha256: 4c8c18d014d81abd89d2c1db91aed0b3910b872754e8873a0a6ec699e85c2cda
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -56,7 +56,7 @@ about:
     Computes alpha and beta diversity metrics using concurrent 'C' threads.
     Metrics include 'UniFrac', Faith's phylogenetic diversity, Bray-Curtis
     dissimilarity, Shannon diversity index, and many others.
-    
+
     If you use this package in your research, please cite the official JOSS paper:
     Smith et al., (2026) <doi:10.21105/joss.09777>.
 
